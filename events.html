@@ -16,7 +16,6 @@
 
 
     <style media="screen">
-
       .gradient-custom {
           background: #6a11cb;
           background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
@@ -37,6 +36,113 @@
 
             }
 
+            .intro{
+            height: 70%;
+            width: 100%;
+            background-image: url("./pics/bg1.jpeg");
+            background-size: cover;
+            }
+            #name{
+            font-family: cursive;
+            padding-left:40%;
+            padding-top: 10%;
+            padding-bottom: 40%;
+            padding-right: 20%;
+            font-size:xx-large;
+            }
+            * {
+            box-sizing: border-box;
+            }
+            .column {
+            float: left;
+            width: 33%;
+            padding: 5px 5px;
+            }
+            .blog {margin: 0 -5px;}
+            .blog:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            }
+            @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            }
+            img{
+            height:auto;
+            width: auto;
+            }
+            }
+            #about{
+            text-align: center;
+            font-size: x-large;
+            }
+            .aboutme{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            }
+            #mypic{
+            border-radius: 50%;
+            }
+            .fa{
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%
+            }
+            .fa:hover {
+            opacity: 0.7;
+            }
+            .fa-facebook {
+            background: #3B5998;
+            color: white;
+            }
+            .fa-instagram {
+            background: #125688;
+            color: white;
+            }
+
+            .image{
+              position: absolute;
+              top: 5vh;
+              left: 3vw;
+              border-radius: 50%;
+            }
+            .video{
+              position: absolute;
+              left: 3vw;
+              bottom: 4vw;
+            }
+            .desc{
+              position: absolute;
+              margin-left: 12cm;
+              margin-top: 2cm;
+              margin-bottom: 2cm;
+              margin-right: 1cm;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+              text-align: center;
+              background-color: #f1f1f1;
+            }
+            .posts{
+              margin-top: 5px;
+              margin-bottom: 5px;
+              margin-left: 5px;
+              margin-right: 5px;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+              background-color: #f1f1f1;
+            }
+
 
 
     </style>
@@ -44,7 +150,7 @@
   <body>
 
     <div id="Top">
-             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                <a class="navbar-brand" href="events.html">Events</a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
@@ -63,8 +169,56 @@
                    <a type="button" class="btn btn-outline-success float-right" style="margin-right:1rem" href="login.html">LogIn or SignUp</a>
                  </form>
                </div>
-             </nav>
-       </div>
+            </nav>
+    </div>
+
+    <div class="bg-image">
+      <img src="./pics/bg7.jpeg" class="w-100" />
+        <a href="#!">
+          <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)"></div>
+        </a>
+    </div>
+
+    <div>
+      <br>
+      <center>
+        <h1>Upcoming Events</h1>
+      </center>
+      <br>
+    </div>
+    <div class="blogs">
+      <div class="column">
+        <div class="card">
+          <img src="./pics/bg6.jpeg" alt="image" height="300" width="400"/>
+          <a href="post1.html">
+            <h3>Rooting deeper in the wild</h3></a>
+          <p>Meditation session on 5/16/2023(Tuesday), 4PM - 6PM</p>
+        </div>
+      </div>
+        <div class="column">
+          <div class="card">
+            <img src="./pics/bg8.webp" alt="image" height="300" width="400"/>
+            <a href="post2.html">
+              <h3>The New Normal</h3></a>
+            <p>Biweekly session of yoga practices on 5/20/2023(Sunday), 6:30AM - 8AM</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="./pics/bg5.jpeg" alt="image" height="300" width="400"/></a>
+            <a href="post3.html">
+              <h3>Source of Life</h3></a>
+            <p>Monthly session about life in YOGA on 5/21/2023(Sunday), 6:30AM - 9AM</p>
+          </div>
+        </div>
+      </div>
+
+
+    <footer>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >© 2020 Copyright:
+        <a class="text-white" href="index.html">BreatheHere.com</a>
+      </div>
+    </footer>
 
    </body>
 </html>
