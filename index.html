@@ -18,7 +18,7 @@
                     /* background-color: #AEC670; */
                     /* background-image: url('pics/bg3.jpeg'); */
                     /* padding-top: 2rem; */
-                    padding-bottom: 10rem;
+                    padding-bottom: 1rem;
                     border-top: 1rem;
                     border-bottom: 5rem;
                     border-left: 5rem;
@@ -52,7 +52,7 @@
                     border-left: 50px;
                 }
             #Mid{
-                background-color:white;
+                /* background-color:#99d98c; */
                 padding-top: 2rem;
                 /* padding-bottom: 10rem; */
                 border-top: 1rem;
@@ -62,6 +62,7 @@
                 text-align: center;
                 margin-left: 5rem;
                 margin-right: 5rem;
+                /* width: 100rem; */
             }
             #Bottom{
                     background-color: black;
@@ -154,6 +155,30 @@
                   .card, .card-img-top {
                     border-radius: 0;
                   }
+/*
+                  // Color of the links BEFORE scroll
+                  .navbar-scroll .nav-link,
+                  .navbar-scroll .navbar-toggler .fa-bars {
+                    color: black;
+                  }
+
+                  // Color of the links AFTER scroll
+                  .navbar-scrolled .nav-link,
+                  .navbar-scrolled .navbar-toggler .fa-bars {
+                    color: black;
+                  }
+
+                  // Color of the navbar AFTER scroll
+                  .navbar-scrolled {
+                    background-color: black;
+                  }
+
+                  // An optional height of the navbar AFTER scroll
+                  .navbar.navbar-scroll.navbar-scrolled {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                  }
+*/
 
 
         </style>
@@ -163,8 +188,8 @@
 
         <div id="Top">
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Home</a>
+          <nav class="navbar navbar-expand-lg bg-dark  navbar-dark container-fluid " >
+            <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -180,39 +205,23 @@
               </ul>
               <form class="form-group nav-link" action="index.html" method="post">
                 <a type="button" class="btn btn-outline-success float-right" style="margin-right:1rem" href="login.html">LogIn or SignUp</a>
-                <!-- <button type="button" class="btn btn-outline-danger float-right" style="margin-right:1rem">SignIn</button> -->
               </form>
             </div>
           </nav>
           <div class="inTop">
-            <!-- <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('pics/bg3.jpeg'); height: 100rem;">
 
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
-
-            <div class="masthead" style="background-image: url('./pics/bg3.jpeg');">
-
-              <!-- d-flex justify-content-center align-items-center
-              <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                  <p class="text-white mb-0">Can you see me?</p>
-                </div>
-              </div> -->
+            <div class="masthead img- fluid" style="background-image: url('./pics/bg3.jpeg');">
 
               <div class="color-overlay dfelx justify-content-center align-items-center">
-
-                <h1>yoga..?<br> do it here</h1>
-
+                <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <p class="text-white mb-0" style="position:relative;"><h1>Yoga..!?<br> let's make it happen Here</h1></p>
+    </div>
+  </div>
               </div>
-
             </div>
-
-
-
             </div>
-
           </div>
-        </div>
-        <!-- Flip ex and 2 more -->
         <div id="Mid">
             <div class="container">
                 <div class="row">
@@ -221,24 +230,20 @@
                       <div class="mainflip">
                         <div class="frontside">
                           <div class="card" style="width:20rem;">
-                            <img class="card-img-top img- fluid" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="card image">
+                            <img class="card-img-top img- fluid" src="./pics/bg4.avif" alt="card image">
                             <div class="card-body">
-                              <h4 class="card-title">Card Title</h4>
-                              <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                              <h4 class="card-title">Experiences</h4>
+                              <p class="card-text">A window into our life</p>
                             </div>
                           </div>
                         </div>
                         <div class="backside">
-                          <div class="card" style="width:20rem;">
-                            <div class="card-header">This is a Header
-                            </div>
+                          <div class="card" style="width:20rem; height:20rem; ">
+                            <div class="card-header"><i>Blog posts</i></div>
                             <div class="card-body">
-                              <h4 class="card-title">Card Title</h4>
-                              <p class="card-text">This is a card component with header and footer.</p>
-                              <a href="#" class="btn btn-info btn-md">Info Button</a>
-                            </div>
-                            <div class="card-footer">
-                              This is a Footer
+                              <h4 class="card-title">Memoirs</h4>
+                              <p class="card-text" style="margin-top:3rem;" >Come and experience the way of life through other's</p>
+                              <a href="blog.html" class="btn btn-info btn-outline-success btn-md" style="margin-top:3rem;">More Info</a>
                             </div>
                           </div>
                         </div>
@@ -251,24 +256,20 @@
                         <div class="mainflip">
                           <div class="frontside">
                             <div class="card" style="width:20rem;">
-                              <img class="card-img-top img- fluid" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="card image">
+                              <img class="card-img-top img- fluid" src="./pics/bg7.jpeg" alt="card image">
                               <div class="card-body">
-                                <h4 class="card-title">Card Title</h4>
-                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                <h4 class="card-title">Gatherings</h4>
+                                <p class="card-text">Let's live as one</p>
                               </div>
                             </div>
                           </div>
                           <div class="backside">
-                            <div class="card" style="width:20rem;">
-                              <div class="card-header">This is a Header
-                              </div>
+                            <div class="card" style="width:20rem; height:20rem;">
+                              <div class="card-header"><i>Events</i></div>
                               <div class="card-body">
-                                <h4 class="card-title">Card Title</h4>
-                                <p class="card-text">This is a card component with header and footer.</p>
-                                <a href="#" class="btn btn-info btn-md">Info Button</a>
-                              </div>
-                              <div class="card-footer">
-                                This is a Footer
+                                <h4 class="card-title">Gathering</h4>
+                                <p class="card-text" style="margin-top:3rem;" >Are u looking for live sessions and guidance</p>
+                                <a href="events.html" class="btn btn-outline-success btn-info btn-md"  style="margin-top:3rem;" >Join Here</a>
                               </div>
                             </div>
                           </div>
@@ -282,24 +283,19 @@
                         <div class="mainflip">
                           <div class="frontside">
                             <div class="card" style="width:20rem;">
-                              <img class="card-img-top img- fluid" src="https://img.webnots.com/2017/04/Bootstrap-Card-Image.png" alt="card image">
+                              <img class="card-img-top img- fluid" src="./pics/bg9.avif" alt="card image">
                               <div class="card-body">
-                                <h4 class="card-title">Card Title</h4>
-                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                              </div>
+                                <h4 class="card-title">Membership</h4>
+                                <p class="card-text">Let everyone know You are Here</p></div>
                             </div>
                           </div>
                           <div class="backside">
-                            <div class="card" style="width:20rem;">
-                              <div class="card-header">This is a Header
-                              </div>
+                            <div class="card" style="width:20rem; height:20rem;">
+                              <div class="card-header">Membership</div>
                               <div class="card-body">
-                                <h4 class="card-title">Card Title</h4>
-                                <p class="card-text">This is a card component with header and footer.</p>
-                                <a href="#" class="btn btn-info btn-md">Info Button</a>
-                              </div>
-                              <div class="card-footer">
-                                This is a Footer
+                                <h4 class="card-title">Join Us</h4>
+                                <p class="card-text" style="margin-top:3rem;" >Let's all get to know eachother </p>
+                                <a href="login.html" class="btn btn-outline-success btn-info btn-md"  style="margin-top:3rem;" >Register Here</a>
                               </div>
                             </div>
                           </div>
@@ -311,146 +307,44 @@
               </div>
         </div>
 
-        <!-- similar 3 cards likely blog -->
-        <!-- <div id="Mid">
-                  <div class="card-group">
-                    <div class="card">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-                    <div class="card">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div class="card">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This card has even longer content than the first to show
-                  that equal height action.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          </div> -->
-
-        <div class="my-5">
-    <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #2ec4b6">
-      <!-- Grid container -->
       <div class="container" >
-        <!-- Section: Links -->
         <section class="mt-5">
-          <!-- Grid row-->
           <div class="row text-center d-flex justify-content-center pt-5">
-            <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
                 <a href="#" class="text-white">About us</a>
               </h6>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
                 <a href="#" class="text-white">Products</a>
               </h6>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
                 <a href="#" class="text-white">Awards</a>
               </h6>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
                 <a href="#" class="text-white">Help</a>
               </h6>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-2" style="padding-bottom: 2rem;">
               <h6 class="text-uppercase font-weight-bold">
                 <a href="#" class="text-white">Contact</a>
               </h6>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row-->
         </section>
-        <!-- Section: Links -->
-
-        <!-- <hr class="my-5" /> -->
-
-
-        <!-- Section: Social -->
-        <!-- <section class="text-center mb-5">
-          <a href="" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-github"></i>
-          </a>
-        </section> -->
-        <!-- Section: Social -->
-
       </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div
-           class="text-center p-3"
-           style="background-color: rgba(0, 0, 0, 0.2)"
-           >
-        © 2020 Copyright:
-        <a class="text-white" href="index.html"
-           >BreatheHere.com</a
-          >
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" >© 2020 Copyright:
+        <a class="text-white" href="index.html">BreatheHere.com</a>
       </div>
-      <!-- Copyright -->
     </footer>
-    <!-- Footer -->
   </div>
-  <!-- End of .container -->
 
     </body>
 
